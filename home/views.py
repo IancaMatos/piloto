@@ -38,4 +38,4 @@ def dia_da_semana(request, dia):
     if dia_nome:
         return render(request, 'dia_da_semana.html', {'dia': dia_nome})
     else:
-        return render(request, 'dia_da_semana.html', {'dia': "Dia inválido"})
+        return render(request, 'dia_da_semana.html', {'dia': "é Dia inválido"})
