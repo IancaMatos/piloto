@@ -71,4 +71,4 @@ def home(request):
         'items': ['Lápis','Caneta','Borracha']
     }
 
-    return render(request,'home.html',context)
+    return render(request,'page.html',context)

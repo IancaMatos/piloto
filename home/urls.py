@@ -12,7 +12,7 @@ urlpatterns = [
     path('perfil/<str:usuario>/', views.perfil,name='perfil'),
     path('dia_da_semana/<int:dia>/', views.dia_da_semana, name='dia_da_semana'),
     path('produtos/', views.produtos, name='produtos'),
-    path('home/', views.home, name='home'),
+    path('page/', views.home, name='page'),
    
 ]
 
