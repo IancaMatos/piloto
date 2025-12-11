@@ -77,8 +77,8 @@ def home(request):
         'username': 'Ianca',
         'items': ['Lápis','Caneta','Borracha']
     }
-
     return render(request,'page.html',context)
+
 
 def form_produto(request):
     form = ProdutoForm()
@@ -86,3 +86,17 @@ def form_produto(request):
         'form': form,
     }
     return render(request,'produtos/formulario.html', contexto)
+
+
+
+
+def detalhe_produto(request,):
+    return render(request, 'produtos/detalhes.html')
+
+def editar_produto(request,id):
+  
+    return render(request, 'produtos/editar.html',{'id':id})
+    
+def excluir_produto(request,id):
+    
+    return render(request, 'produtos/excluir.html',{'id':id})
