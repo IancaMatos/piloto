@@ -13,6 +13,7 @@ urlpatterns = [
     path('dia_da_semana/<int:dia>/', views.dia_da_semana, name='dia_da_semana'),
     path('produtos/', views.produtos, name='produtos'),
     path('page/', views.home, name='page'),
+    path('produtos/form', views.form_produto, name='form_produto'),
    
 ]
 
