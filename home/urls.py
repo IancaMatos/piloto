@@ -18,7 +18,7 @@ urlpatterns = [
     path('detalhe/<int:id>', views.detalhe_produto, name='detalhe_produto'),
 
     # Rota: /produtos/editar/10
-    path('editar/<int:id>', views.editar_produto, name='editar_produto'),
+    path('editar/form', views.editar_produto, name='editar_produto'),
 
     # Rota: /produtos/excluir/10
     path('excluir/<int:id>', views.excluir_produto, name='excluir_produto'),

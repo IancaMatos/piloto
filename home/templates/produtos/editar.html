@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 
-{% block titulo %}editando{% endblock  %}
+{% block titulo  %} Formulário de Produtos {% endblock %}
 
-{% block conteudo %}
+{% block conteudo  %}
 
-<h5>Você está editando o produto {{id}}</h5>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }} 
+         
+        <button onclick ="location '{% url "produtos" %}'" class="btn btn-primary" type="button">Salvar</button>
+    </form>
+
+
 {% endblock %}

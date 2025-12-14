@@ -1,5 +1,6 @@
 from django.shortcuts import render, HttpResponse
 from .forms import ContatoForm, ProdutoForm
+from .models import Produto
 # from django.http import
 
 # Create your views here.
@@ -90,12 +91,18 @@ def form_produto(request):
 
 
 
-def detalhe_produto(request,):
-    return render(request, 'produtos/detalhes.html')
+def detalhe_produto(request,id):
 
-def editar_produto(request,id):
-  
-    return render(request, 'produtos/editar.html',{'id':id})
+    return render(request, 'produtos/detalhes.html',{'id':id})
+
+
+def editar_produto(request):
+    form = ProdutoForm()
+    contexto = {
+        'form': form,
+    }
+    return render(request,'produtos/formulario.html', contexto)
+
     
 def excluir_produto(request,id):
     

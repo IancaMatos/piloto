@@ -24,7 +24,7 @@
             <td>{{item.preco}}</td>
             <td>
                 <button onclick="location.href='{% url "detalhe_produto" item.id %}'" class= "btn btn-info">Detalhes</button>
-                <button onclick="location.href='{% url "editar_produto" item.id %}'" class= "btn btn-warning">Editar</button>
+                <button onclick="location.href='{% url "editar_produto"  %}'" class= "btn btn-warning">Editar</button>
                 <button onclick="location.href='{% url "excluir_produto" item.id %}'" class= "btn btn-danger">Excluir</button>
             </td>
         </tr>

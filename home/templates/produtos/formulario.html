@@ -6,7 +6,7 @@
 
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }} <!-- Renderiza cada campo do formulário com <p> tags -->
+        {{ form.as_p }} 
          
         <button onclick ="location '{% url "produtos" %}'" class="btn btn-primary" type="button">Salvar</button>
     </form>
